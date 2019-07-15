@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorDarkBlue"
+              tools:context=".view.AddBlocksActivity"
+>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ActionBarTheme"
+            android:padding="5dp"
+            app:logo="@drawable/orizontallogo"
+            app:navigationIcon="@drawable/arrow_back"
+            android:layout="@menu/new_menu"
+    />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleSecurityConf"
+            android:text="@string/feedrssText"
+            android:textColor="@color/colorYellow"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+
+    />
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedrssTitle"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorLightGrey"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center|center_horizontal"/>
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarkBlue"
+            android:padding="15dp"
+            android:checkedButton="@+id/radio2"
+    >
+        <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seriaB"
+                android:textColor="@color/colorLightGrey"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="@color/colorLightGrey"
+                android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motoGp"
+                android:textColor="@color/colorLightGrey"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="@color/colorLightGrey"
+                android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+                android:id="@+id/FeedFormula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Formula1"
+                android:textColor="@color/colorLightGrey"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="@color/colorLightGrey"
+                android:onClick="onRadioButtonClicked"/>
+        />
+        <RadioButton
+            android:id="@+id/FeedBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Basket"
+            android:textColor="@color/colorLightGrey"
+            android:layout_marginBottom="10dp"
+            android:buttonTint="@color/colorLightGrey"
+            android:onClick="onRadioButtonClicked"/>
+    />
+        <RadioButton
+                android:id="@+id/FeedCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedCustomRss"
+                android:textColor="@color/colorLightGrey"
+                android:buttonTint="@color/colorLightGrey"
+                android:onClick="onRadioButtonClicked"/>
+        />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleInsTextConf"
+            android:text="Inserisci URL"
+            android:textColor="@color/colorLightGrey"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBlockConf"
+            android:textColor="@color/colorLightGrey"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+            app:backgroundTint="@color/colorLightGrey" android:layout_marginTop="10dp"
+    />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/feedrssBlockbtnSalvab"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/saveblockAndBack"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+
+        />
+
+        <Button android:layout_weight="1"
+                android:id="@+id/feedrssBlockbtnSalvaw"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:width="0dp"
+                android:text="@string/saveWorkflow"
+                android:gravity="center"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+        />
+        <Button android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:id="@+id/feedrssBlockbtnAnnulla"
+                android:text="@string/cancel"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:layout_gravity="right|center_vertical"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="3">
+
+        <Button android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/saveChangesFeed"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/saveChanges"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"/>
+        />
+
+
+        <Button android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:id="@+id/cancelChangesFeed"
+                android:text="@string/cancel"
+                android:textColor="@color/colorLightGrey"
+                android:layout_gravity="right|center_vertical"
+                android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+        <Button android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:id="@+id/removeChangesFeed"
+                android:text="@string/removeBlocksConf"
+                android:layout_gravity="center|center_vertical"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:background="@color/colorDarkBlue"
+         tools:context="com.megalexa.hexadec.view.ConfigurationWorkflow">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/AppTheme.ActionBarTheme"
+                android:padding="5dp"
+                app:logo="@drawable/orizontallogo"
+                app:navigationIcon="@drawable/arrow_back"
+                android:layout="@menu/new_menunocerca"
+        />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="2">
+            <ImageView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/textViewWorkflowPin"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorLightBlue"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workname"
+                    android:id="@+id/worknameConfiguration"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listworkflow"
+                    android:id="@+id/backWorkflowList"
+                    android:theme="@style/ThemeOverlay.MyDarkButton"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deleteworkflow"
+            android:id="@+id/deleteWorkflowConf"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+    android:layout_weight="1"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnmodifyWork"
+            android:id="@+id/modifyWokflow"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:layout_weight="1"/>
+</LinearLayout>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modifyblock"
+                android:id="@+id/worknameConfiguration2"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="13dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewConfiguration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorDarkBlue"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingBottom="48dp"
+                android:clipToPadding="false"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/tools"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorDarkBlue">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ActionBarTheme"
+            android:padding="5dp"
+            app:logo="@drawable/orizontallogo"
+            app:navigationIcon="@drawable/arrow_back"
+            android:layout="@menu/new_menu"
+    />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleSecurityConf"
+            android:text="@string/settings"
+            android:textColor="@color/colorYellow"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+
+    />
+    <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrey"
+
+            card_view:cardCornerRadius="10dp"
+            card_view:contentPadding="5dp"
+            card_view:cardElevation="4dp"
+            card_view:cardMaxElevation="6dp"
+    >
+
+        <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="@string/settingsUsername"
+                    android:id="@+id/textViewUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorDarkBlue"/>
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="Valentin"
+
+                    android:id="@+id/textViewValueUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrey"
+
+            card_view:cardCornerRadius="10dp"
+            card_view:contentPadding="5dp"
+            card_view:cardElevation="4dp"
+            card_view:cardMaxElevation="6dp"
+    >
+
+        <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="@string/settingsEmail"
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorDarkBlue"/>
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="hexadec@gmail.com"
+
+                    android:id="@+id/textViewValueEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrey"
+
+            card_view:cardCornerRadius="10dp"
+            card_view:contentPadding="5dp"
+            card_view:cardElevation="4dp"
+            card_view:cardMaxElevation="6dp"
+    >
+
+        <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="@string/settingsPin"
+                    android:id="@+id/textPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorDarkBlue"/>
+
+            <EditText
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:text="1234"
+
+                    android:id="@+id/editTextPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd" android:gravity="end"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                    app:backgroundTint="@color/colorLightGrey" android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/btnChangeLang"
+                android:text="@string/changeLang"
+                android:layout_weight="1"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+        <Button android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/SaveButton"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/save"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+
+        />
+
+
+        <Button android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:id="@+id/settingsAnnulla"
+                android:text="@string/cancel"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:layout_gravity="right|center_vertical"/>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

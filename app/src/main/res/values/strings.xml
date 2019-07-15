@@ -1,0 +1,223 @@
+<resources>
+    <string name="client_id" translatable="false">d377e97a96574e8fb2f2b671e88bc41c</string>
+    <string name="callback_url" translatable="false">https://instagram.com/</string>
+    <string name="base_url" translatable="false">https://api.instagram.com/</string>
+    <string name="redirect_url" translatable="false">https://instagram.com/</string>
+    <string name="get_user_info_url" translatable="false">https://api.instagram.com/v1/users/self/?access_token=</string>
+    <string name="lan">EN_en</string>
+    <string name="language">Choose Language</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="GoogleText">Google Block don\'t need configuration.</string>
+    <string name="btnGeo">Use current position</string>
+
+    <!-- Sync Preferences (English)-->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="configure_block">Configure Block</string>
+    <string name="save">Save</string>
+    <string name="seleziona_il_blocco_da_configurare">select block to configure</string>
+    <string name="testo">Text</string>
+    <string name="search">Search</string>
+    <string name="SubMenu">SubMenu</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="app_name" translatable="false">Hexadec</string>
+    <string name="loading_text">Loading ...</string>
+    <string name="search_hint">Search Name or Age</string>
+    <string name="primary_lang">English</string>
+    <string name="secondary_lang">Italian</string>
+    <string name="add_workflow">Add</string>
+
+    <!-- Settings -->
+    <string name="settingsUsername">Username</string>
+    <string name="settingsEmail">Email</string>
+    <string name="settingsPin">Pin</string>
+    <string name="changeLang">Change Language</string>
+
+
+    <!--  Blocco Testo -->
+    <string name="textTitle">Text block configuration</string>
+    <string name="alexaText">Insert the text you want Alexa to say</string>
+    <string name="saveChanges">Save changes</string>
+    <string name="cancelChanges">Cancel changes</string>
+
+    <!--General-->
+    <string name="saveblockAndBack">Save and configure others blocks</string>
+    <string name="saveWorkflow">Save workflow</string>
+    <string name="cancel">Cancel</string>
+    <string name="filterUrl">Enter limits</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="loginText">Welcome! To use the facilities please register or login on Amazon.</string>
+    <string name="logoutFun">Logout</string>
+    <string name="inserisciNome">Add workflow name </string>
+    <string name="tempo">Select day time </string>
+    <string name="numFiltro">You can write only number </string>
+
+    <!--Blocco Filtro-->
+    <string name="filterText">Filter block configuration</string>
+    <string name="filterspinnerTitle">Choose the block you want to apply the filter on</string>
+    <string name="erroreFilter">You need to configure a Filtrable Block before selecting this block</string>
+    <string name="errorePin">You have alredy set that block for this workflow</string>
+
+    <!--Blocco FeedRss-->
+    <string name="feedrssText">FeedRss block configuration</string>
+    <string name="feedrssTitle">Choose the Feed Rss type</string>
+    <string name="seriaA">Football</string>
+    <string name="seriaB">Football</string>
+    <string name="motoGp">MotoGp</string>
+    <string name="Formula1">Formula 1</string>
+    <string name="Basket">Basket</string>
+    <string name="feedCustomRss">Custom</string>
+
+    <!--Blocco TVProgram-->
+    <string name="tvProgramText">TV Program block configuration</string>
+    <string name="tvProgramTitle">Choose the Tv Program type</string>
+
+
+    <!--Blocco Radio-->
+    <string name="radioText">Radio block configuration</string>
+    <string name="radioTextS">Select the channel</string>
+    <string name="radio1">Radio 80</string>
+    <string name="radio2">Radio Kiss Kiss</string>
+    <string name="radio3">Radio Deejay</string>
+    <string name="radio4">R101 Hipster</string>
+
+    <!-- Aggiungi blocco-->
+    <string name="addblockTitle">Which block do you want to configure?</string>
+
+    <!--Aggiungi workflow-->
+    <string name="addworkflowTitle">Create your workflow</string>
+    <string name="workflowName">Workflow name</string>
+    <string name="workflowWelcomeText">Workflow welcome text</string>
+    <string name="workflowAddBlocks">Add blocks</string>
+    <string name="Weather_API">Weather</string>
+    <string name="YouTube_API">YouTubeValue</string>
+    <string name="YouTubeMusic_API">You tube music api</string>
+    <string name="Instagram_API">Instagram</string>
+
+    <!--Aggiunta Toast-->
+    <string name="Authorization">Authorization Success</string>
+    <string name="Authentication">Authentication Success</string>
+    <string name="AuthenticationF">Authentication Failed</string>
+    <string name="erroreIg">You must Log In in Instagram</string>
+    <string name="modifyWorkConf">Save Changes</string>
+    <string name="errKindle">The url must start with https: and end with .pdf</string>
+    <string name="errMeteo">Add a city</string>
+    <string name="loadingDb">Saving Data ...</string>
+    <string name="getInfo">Loading Workflows ...</string>
+    <string name="worknameList">Your workflow list</string>
+    <string name="cliktomodify">Click a card to modify the workflow</string>
+    <string name="modifyblock">Click a block to modify it</string>
+
+
+    <string name="SecurityText">Security Block has not a configuration</string>
+    <string name="InstagramC">Instagram Block Configuration</string>
+    <string name="MailC">Mail Block Configuration</string>
+    <string name="InstagramText">If you have alredy log-In, You only need to save this block</string>
+    <string name="MailText">Insert an E-Mail </string>
+    <string name="WeatherText">Insert the name of a city</string>
+    <string name="WeatherTextC">Weather Block Configuration</string>
+    <string name="YouTubeText">YouTube Block Configuration</string>
+    <string name="YouTubeMusicText">YouTube Music Block Configuration</string>
+    <string name="YTT">Insert URL of YouTube\'s video</string>
+    <string name="YTMT">Insert URL of YouTube Music or Playlist</string>
+    <string name="TelegramC">Telegram Block Configuration</string>
+    <string name="TelegramT">Insert name of group or chat</string>
+    <string name="FacebookText">Insert a facebook profile</string>
+    <string name="FacebookC">Facebook Block Configuration</string>
+    <string name="KindleText">Insert a pdf URL</string>
+    <string name="KindleC">Kindle Block Configuration</string>
+    <string name="SlackText">Insert a group chat id</string>
+    <string name="SlackC">Slack Block Configuration</string>
+    <string name="LoginText">Login</string>
+    <string name="login_with_amazon">Login with Amazon</string>
+    <string-array name="Block">Feed RSS</string-array>
+    <string name="morning">Morning</string>
+    <string name="noon">Noon</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="none">Never</string>
+    <string name="wLength">Workflow name must not be null</string>
+    <string name="wBlockLength">workflow must have blocks</string>
+
+
+
+    <string name="title_text" translatable="false">Google Sign-In\nQuickstart</string>
+
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt" translatable="false">Signed in as: %s</string>
+    <string name="signed_in" translatable="false">Signed in</string>
+    <string name="signing_in" >Signing in…</string>
+    <string name="signed_out" >Signed out</string>
+    <string name="signed_in_err" translatable="false">"Error: please check logs."</string>
+    <string name="error_null_person" translatable="false">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="loading" translatable="false">Loading…</string>
+    <string name="auth_code_fmt" translatable="false">Auth Code: %s</string>
+    <string name="id_token_fmt" translatable="false">ID Token: %s</string>
+    <string name="modifyError">no fields have been changed</string>
+    <string name="PinError">This block cannot be changed in this section. In order to change it go on Settings menu</string>
+
+    <!-- Google Play Services error for Toast -->
+    <string name="play_services_error_fmt" translatable="false">Google Play Services Error: %i</string>
+
+    <!-- Button labels -->
+    <string name="sign_out" translatable="false">Sign Out</string>
+    <string name="disconnect" translatable="false">Disconnect</string>
+    <string name="refresh_token" translatable="false">Get Fresh Token</string>
+
+    <!-- Content Description for images -->
+    <string name="desc_google_icon" translatable="false">Google Logo</string>
+
+    <!-- Rationale for asking for Contacts -->
+    <string name="contacts_permission_rationale" translatable="false">Contacts access is needed in order to retrieve your email address.</string>
+
+    <!-- Activity Names and Descriptions -->
+    <string name="name_sign_in_activity" translatable="false">SignInActivity</string>
+    <string name="desc_sign_in_activity" translatable="false">Signing in, signing out, and revoking access.</string>
+    <string name="desc_sign_in_activity_scopes" translatable="false">Signing in, signing out, and revoking access with Google Drive permissions.</string>
+
+    <string name="name_id_token_activity" translatable="false">IdTokenActivity</string>
+    <string name="desc_id_token_activity" translatable="false">Retrieving an ID Token for the user.</string>
+
+    <string name="desc_auth_code_activity" translatable="false">Demonstrate retrieving an auth code for authorizing your server.</string>
+    <string name="name_auth_code_activity" translatable="false">ServerAuthCodeActivity</string>
+
+    <string name="desc_rest_activity" translatable="false">Demonstrate using Google Sign In with a Google REST API</string>
+    <string name="name_rest_activity" translatable="false">RestApiActivity</string>
+
+    <!-- Messages for the Rest API activity -->
+    <string name="connections_fmt" translatable="false">Connections: %1$s</string>
+    <string name="msg_contacts_failed" translatable="false">Get contacts failed.</string>
+
+    <!-- TODO(user): replace with your real server client ID -->
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+         from https://console.developers.google.com/ -->
+    <string name="server_client_id" translatable="false">835604593037-lqiq9uk00ms4ftb3ht34lbqmfnv469ub.apps.googleusercontent.com</string>
+
+    <string name="listworkflow">Return to Workflow List</string>
+    <string name="deleteworkflow">Delete Workflow</string>
+    <string name="addBlocksConf">Add Blocks</string>
+    <string name="modifyBlocksConf">Add Blocks</string>
+    <string name="removeBlocksConf">Remove Block</string>
+    <string name="infoDay">select which part of the day this workflow could be executed</string>
+    <string name="btnmodifyWork">Modify workflow</string>
+
+</resources>

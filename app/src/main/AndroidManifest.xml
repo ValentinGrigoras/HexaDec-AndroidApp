@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          package="com.megalexa.hexadec">
+
+    <dist:module dist:instant="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+            android:name=".utils.ApplicationContext"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <activity android:name=".view.ViewActivity"></activity>
+        <activity android:name=".view.ConfigurationWorkflow"></activity>
+
+        <activity android:name=".view.SettingsActivity" android:parentActivityName=".view.MainActivity">
+    </activity>
+        <activity android:name=".view.NewWorkflowActivity" android:parentActivityName=".view.ViewActivity">
+        </activity>
+        <activity android:name=".view.AddBlocksActivity" android:parentActivityName=".view.NewWorkflowActivity">
+        </activity>
+        <activity android:name=".view.GMailBlockActivity" android:parentActivityName=".view.AddBlocksActivity">
+        </activity>
+        <activity android:name=".view.BlockActivity" android:parentActivityName=".view.AddBlocksActivity">
+        </activity>
+        <activity android:name=".view.FeedRssBlockActivity" android:parentActivityName=".view.AddBlocksActivity">
+        </activity>
+        <activity android:name=".view.FilterBlockActivity" android:parentActivityName=".view.AddBlocksActivity">
+    </activity>
+        <activity android:name=".view.TVProgramBlockActivity" android:parentActivityName=".view.AddBlocksActivity">
+        </activity>
+        <activity
+                android:name=".view.MainActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity"
+                android:allowTaskReparenting="true"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- android:host must use the full package name found in Manifest General Attributes -->
+                <data
+                        android:host="com.megalexa.hexadec"
+                        android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.RadioBlockActivity"/>
+        <activity android:name=".view.ConfigurationBlocks"/>
+        <activity android:name=".view.SecurityBlockActivity"/>
+        <activity android:name=".view.YouTubeBlockActivity"/>
+        <activity android:name=".view.InstagramBlockActivity"/>
+        <activity android:name=".view.YouTubeMusicBlockActivity"/>
+        <activity android:name=".view.TelegramBlockActivity"/>
+        <activity android:name=".view.FacebookBlockActivity"/>
+        <activity android:name=".view.SlackBlockActivity"/>
+        <activity android:name=".view.KindleBlockActivity"/>
+        <activity android:name=".view.WeatherBlockActivity"/>
+
+        <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.test.SearchActivity" />
+
+
+    </application>
+</manifest>

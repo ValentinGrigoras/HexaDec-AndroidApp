@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorYellow">#FF9900</color>
+    <color name="colorLightBlue">#146eb4</color>
+    <color name="colorDarkBlue">#232F3E</color>
+    <color name="colorLightGrey">#F2F2F2</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorStrongGrey">#425874</color>
+    <color name="colorPrimary">#146eb4</color>
+    <color name="colorPrimaryDark">#232f3e</color>
+
+    <!-- Base application theme. -->
+
+
+</resources>

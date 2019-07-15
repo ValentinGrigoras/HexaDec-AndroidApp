@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+                                                     android:background="@color/colorDarkBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.megalexa.hexadec.view.ViewActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/AppTheme.ActionBarTheme"
+                android:padding="5dp"
+                app:logo="@drawable/orizontallogo"
+                app:navigationIcon="@drawable/arrow_back"
+                android:layout="@menu/new_menu"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/worknameList"
+                android:textColor="@color/colorYellow"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cliktomodify"
+                android:textColor="@color/colorLightGrey"
+                android:textSize="13dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewConf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorDarkBlue"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingBottom="48dp"
+                android:clipToPadding="false"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_new_workflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+
+            android:backgroundTint="@color/colorYellow"
+            app:srcCompat="@drawable/plus2"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

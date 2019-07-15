@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/action_search"
+            android:title="Cerca Workflow"
+            android:icon="@drawable/search"
+            app:showAsAction="always"
+            app:actionViewClass="android.widget.SearchView" />
+
+    <item android:id="@+id/itemMenu"
+          android:icon="@drawable/dot"
+          android:title="lingua"
+          app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/settings"
+                  android:title="@string/settings"
+                  app:showAsAction="never"/>
+
+            <item android:id="@+id/logout"
+                  android:title="@string/logoutFun"
+                  app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

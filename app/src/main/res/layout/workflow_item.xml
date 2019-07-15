@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="110dp"
+              tools:context=".view.ViewActivity"
+              tools:showIn="@layout/workflow_view"
+              android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGrey"
+            card_view:contentPadding="5dp"
+            card_view:cardElevation="4dp"
+            card_view:cardMaxElevation="6dp">
+    <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:weightSum="2">
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Workflow1"
+                android:id="@+id/textViewWorkflowName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/colorDarkBlue"/>
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Workflow1"
+                android:id="@+id/textViewWorkflowCreateDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimaryDark" android:gravity="end"/>
+
+
+
+    </LinearLayout>
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/textViewWorkflowSuggestedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorYellow"
+                android:textSize="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorLightBlue"
+        android:layout_gravity="right"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

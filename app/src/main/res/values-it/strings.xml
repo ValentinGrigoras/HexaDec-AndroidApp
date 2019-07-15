@@ -1,0 +1,165 @@
+<resources>
+    <string name="lan">IT_it</string>
+    <string name="language">Scegli la lingua</string>
+    <string name="title_activity_view">Lista workflow</string>
+    <string name="title_activity_settings">Impostazioni</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messaggi</string>
+    <string name="sync_header">Sincronizza</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">La tua firma</string>
+    <string name="reply_title">Azione di inoltro</string>
+
+    <!-- Sync Preferences (English)-->
+    <string name="sync_title">Sincronizza periodicamente le mail</string>
+    <string name="attachment_title">Scaricamento contenuto in entrata</string>
+    <string name="attachment_summary_on">Scaricamento automatico dei contenuti delle mail in entrate</string>
+    <string name="attachment_summary_off">Scarica i contenuti manualmente quando sono stati richiesti</string>
+    <string name="configure_block">Configura il blocco</string>
+    <string name="save">Salva</string>
+    <string name="seleziona_il_blocco_da_configurare">Seleziona Il blocco da configurare</string>
+    <string name="testo">Testo</string>
+    <string name="search">Cerca</string>
+    <string name="SubMenu">SottoMenu</string>
+    <string name="help">Aiuto</string>
+    <string name="logout">Esci</string>
+    <string name="settings">Impostazioni</string>
+    <string name="loading_text">Caricamento...</string>
+    <string name="search_hint">Cerca un workflow</string>
+    <string name="primary_lang">Inglese</string>
+    <string name="secondary_lang">Italiano</string>
+    <string name="add_workflow">Aggiungi</string>
+    <string name="cancelBtn">Annulla</string>
+    <string name="erroreFilter">Devi confiurare un blocco filtrabile prima di selezionare questo blocco</string>
+    <string name="errorePin">Hai già settato il blocco Pin in questo Workflow</string>
+    <string name="inserisciNome">Inserisci il nome del workflow</string>
+    <string name="tempo">Seleziona un tempo della giornata </string>
+    <string name="cliktomodify">Premi un workflow per modificare</string>
+    <string name="modifyblock">Premi un blocco per modificarlo</string>
+    <string name="modifyError">Noi hai modificato nessun campo!</string>
+    <string name="PinError">Questo blocco non può essere modificato in questa sezione. Per poterlo configurare vai in Impostazioni.</string>
+
+    <!-- Settings -->
+    <string name="settingsUsername">Nome Utente</string>
+    <string name="settingsEmail">Posta Elettronica</string>
+    <string name="settingsPin">Codice Sicurezza</string>
+    <string name="changeLang">Cambia lingua</string>
+    <string name="signing_in" >Accesso eseguito</string>
+    <string name="signed_out" >Accesso non ancora eseguito</string>
+
+
+    <!--  Blocco Testo -->
+    <string name="textTitle">Configura il blocco Testo</string>
+    <string name="alexaText">Inserisci il testo che Alexa deve dire</string>
+    <string name="saveChanges">Salva modifiche</string>
+    <string name="cancelChanges">Salva modifiche</string>
+
+    <!--General-->
+    <string name="saveblockAndBack">Salva e configura altri blocchi</string>
+    <string name="saveWorkflow">Salva workflow</string>
+    <string name="cancel">Annulla</string>
+    <string name="filterUrl">Inserisci un limite</string>
+    <string name="deleteBtn">Cancella</string>
+    <string name="loginText">Benvenuto! Per utilizzare HexadecApp effettua il login o registrati con Amazon.</string>
+    <string name="logoutFun">Disconnetti</string>
+
+    <!--Blocco Filtro-->
+    <string name="filterText">Configura il blocco filtro</string>
+    <string name="filterspinnerTitle">Scegli il blocco su cui applicare il filtro</string>
+
+
+    <!--Blocco FeedRss-->
+    <string name="feedrssText">Configura il blocco FeedRss</string>
+    <string name="feedrssTitle">Scegli il tipo del FeedRss</string>
+    <string name="seriaA">Calcio</string>
+    <string name="seriaB"> Calcio</string>
+    <string name="motoGp">MotoGp</string>
+    <string name="Formula1">Formula 1</string>
+    <string name="Basket">Basket</string>
+    <string name="feedCustomRss">Personalizzato</string>
+
+    <!--Blocco TVProgram-->
+    <string name="tvProgramText">Configura il blocco programmazione TV</string>
+    <string name="tvProgramTitle">Scegli il canale di cui vuoi ricevere la programmazione</string>
+
+
+    <!-- Aggiungi blocco-->
+    <string name="addblockTitle">Scegli il blocco da configurare</string>
+
+    <!--Aggiungi workflow-->
+    <string name="addworkflowTitle">Crea il tuo workflow</string>
+    <string name="workflowName">Nome workflow</string>
+    <string name="workflowWelcomeText">Testo di benvenuto nel workflow</string>
+    <string name="workflowAddBlocks">Aggiungi blocchi</string>
+    <string name="Weather_API">Meteo</string>
+    <string name="YouTube_API">You Tube Value</string>
+    <string name="YouTubeMusic_API">You Tube Music Api</string>
+    <string name="Instagram_API">Instagram</string>
+    <string name="MailC">Configurazione blocco Mail</string>
+    <string name="MailText">Inserisci una E-Mail </string>
+    <string name="numFiltro">Inserisci caratteri numerici </string>
+
+    <!--Aggiunta Toast-->
+    <string name="Authorization">Autorizzazione Confermata</string>
+    <string name="Authentication">Autenticazione Confermata</string>
+    <string name="AuthenticationF">Autenticazione Fallita</string>
+    <string name="modifyWorkConf">Salva Modifiche</string>
+    <string name="errKindle">L\'indirizzo deve iniziare con https: e terminare con .pdf</string>
+    <string name="errMeteo">Inserisci una città</string>
+    <string name="btnGeo">Usa posizione Corrente</string>
+    <string name="loadingDb">Sto salvando le informazioni ...</string>
+    <string name="getInfo">Sto caricando i tuoi workflow ... </string>
+    <string name="btnmodifyWork">Modifica workflow</string>
+    <string name="worknameList">La tua lista di workflow</string>
+
+
+    <string name="SecurityText">Il blocco Sicurezza non necessita di configurazione</string>
+    <string name="GoogleText">Il blocco Google non necessita di configurazione in app. Necessita di configurazione in impostazoni-> Hexadec</string>
+    <string name="InstagramC">Configurazione Blocco Instagram</string>
+    <string name="InstagramText">Se hai già effettuato l\'accesso a Instagram devi solo salvare il blocco</string>
+    <string name="WeatherText">Inserisci il nome di una città</string>
+    <string name="WeatherTextC">Configura blocco meteo</string>
+    <string name="YouTubeText">Configurazione Blocco YouTube</string>
+    <string name="YouTubeMusicText">Configurazione Blocco YouTube Music</string>
+    <string name="YTT">Inserisci URL di un video da YouTube</string>
+    <string name="YTMT">Inserisci URL di una traccia da YouTube Music o di una Playlist</string>
+    <string name="TelegramC">Configurazione Blocco Telegram</string>
+    <string name="TelegramT">Inserisci il nome del gruppo o della chat da monitorare</string>
+    <string name="LoginText">Accedi</string>
+    <string name="FacebookText">Inserisci un profilo facebook</string>
+    <string name="FacebookC">Configurazione Blocco Facebook</string>
+    <string name="KindleText">Inserisci un URL</string>
+    <string name="KindleC">Configurazione Blocco Kindle</string>
+    <string name="SlackText">Inserisci un gruppo Slack</string>
+    <string name="SlackC">Configurazione Blocco Slack</string>
+    <string name="erroreIg">Devi effettuare il logIn</string>
+
+
+
+    <!--Blocco Radio-->
+    <string name="radioText">Configura il blocco radio</string>
+    <string name="radioTextS">Seleziona la Frequenza</string>
+    <string name="radio1">Radio 80</string>
+    <string name="radio2">Radio Kiss Kiss</string>
+    <string name="radio3">Radio Deejay</string>
+    <string name="radio4">R101 Hipster</string>
+    <string name="login_with_amazon">Accedi con Amazon</string>
+    <string-array name="Block">Feed RSS</string-array>
+    <string name="morning">Mattino</string>
+    <string name="noon">Mezzogiorno</string>
+    <string name="afternoon">Pomeriggio</string>
+    <string name="evening">Sera</string>
+    <string name="night">Notte</string>
+    <string name="none">Mai</string>
+    <string name="wLength">inserire nome al workflow</string>
+    <string name="wBlockLength">il workflow deve contenere almeno un blocco</string>
+
+    <string name="listworkflow">Torna alla lista Worfklow</string>
+    <string name="deleteworkflow">Cancella Workflow</string>
+    <string name="addBlocksConf">Aggiungi Blocchi</string>
+    <string name="modifyBlocksConf">Modifica workflow</string>
+    <string name="removeBlocksConf">Cancella Blocco</string>
+    <string name="infoDay"> selezionare in quale fase della giornata potrebbe essere eseguito  questo workflow</string>
+</resources>

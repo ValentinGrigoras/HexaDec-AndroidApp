@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorDarkBlue"
+              tools:context=".view.RadioBlockActivity"
+>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ActionBarTheme"
+            android:padding="5dp"
+            app:logo="@drawable/orizontallogo"
+            app:navigationIcon="@drawable/arrow_back"
+            android:layout="@menu/new_menu"
+    />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleSecurityConf"
+            android:text="@string/radioText"
+            android:textColor="@color/colorYellow"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+
+    />
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioTextS"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorLightGrey"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarkBlue"
+            android:padding="15dp"
+    >
+        <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio1"
+                android:textColor="@color/colorLightGrey"
+                android:layout_marginBottom="10dp"
+                android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio2"
+                android:textColor="@color/colorLightGrey"
+                android:layout_marginBottom="10dp"
+                android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio3"
+                android:textColor="@color/colorLightGrey"
+                android:layout_marginBottom="10dp"
+                android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:id="@+id/radioBlockbtnSalvab"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/saveblockAndBack"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+
+        />
+
+        <Button android:layout_weight="1"
+                android:id="@+id/radioBlockbtnSalvaw"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:width="0dp"
+                android:text="@string/saveWorkflow"
+                android:gravity="center"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+        />
+        <Button android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:id="@+id/radioBlockbtnAnnulla"
+                android:text="@string/cancel"
+                android:textColor="@color/colorLightGrey"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:layout_gravity="right|center_vertical"/>
+    </LinearLayout>
+</LinearLayout>
